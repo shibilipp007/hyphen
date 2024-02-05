@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+.flex {
+  display: flex;
+}
+
+.container h1 {
+  color: #010101;
+  margin-bottom: 24px;
+}
+#header {
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+}
+.container h2 {
+  margin-bottom: 50px;
+  color: #000000;
+}
+.container {
+  padding: 10px 10%;
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 75px;
+  height: 50px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px;
+}
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #ffd503;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.header-text {
+  background-image: url("./crop-architect-opening-blueprint.png");
+  font-size: 40px;
+  display: flex;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 900px;
+  align-items: center;
+}
+.header-text .header-content {
+  max-width: 500px;
+}
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+  color: #ffd503;
+}
+.header-text h2 {
+  font-size: 32px;
+  margin-top: 20px;
+  color: #000000;
+  margin-bottom: 0;
+}
+.header-text p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #3b3838;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+.header-text img {
+  width: 70%;
+  display: block;
+}
+.btn {
+  height: 48px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd503;
+  color: #010101;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+}
+/* ----services---- */
+#services {
+  padding: 80px 0px;
+  color: #ababab;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.services-col {
+  width: 300px;
+  max-width: 50%;
+  flex: 1 0 auto;
+  padding: 0 20px;
+}
+.services-col img {
+  width: 60%;
+  height: 50%;
+}
+/* -------gallry------- */
+#gallery {
+  padding: 80px 0;
+  background-color: #f0f2f5;
+}
+.gallery-container h1 {
+  color: #2e2b2b;
+  margin-bottom: 24px;
+}
+.row-gal {
+  display: flex;
+  margin: 0 -20px;
+}
+.gallery-col {
+  padding: 0 20px;
+  width: 300px;
+  flex: 1 0 auto;
+}
+.gallery-col img {
+  display: block;
+  width: 100%;
+}
+.magic {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.magic .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(110%);
+}
+/* ----about---- */
+#about {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+.about-col {
+  padding: 0 10px;
+  width: 50%;
+  margin-bottom: 24px;
+}
+.l-labour {
+  height: 10px;
+  width: 600px;
+  background-color: #ababab;
+}
+.l-labour .l {
+  height: 100%;
+  width: 76%;
+  background-color: blue;
+  margin-bottom: 24px;
+}
+.w-works {
+  height: 10px;
+  width: 600px;
+  background-color: #ababab;
+}
+.w-works .w {
+  height: 100%;
+  width: 58%;
+  background-color: blue;
+  margin-bottom: 24px;
+}
+.c-works {
+  height: 10px;
+  width: 600px;
+  background-color: #ababab;
+}
+.c-works .c {
+  height: 100%;
+  width: 45%;
+  background-color: blue;
+  margin-bottom: 24px;
+}
+/* -----contact----- */
+#Contact {
+  padding: 80px 0;
+  background-color: #f0f2f5;
+}
+
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-left p {
+  padding-left: 8px;
+}
+.contact-right {
+  flex-basis: 60%;
+}
+.btn-2 {
+  display: inline-block;
+  background-color: #ffd503;
+  padding: 10px 16px;
+  border-radius: 5px;
+  color: #010101;
+}
+.contact-right form {
+  width: 100%;
+  margin-left: 24px;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  background: none;
+  padding: 15px;
+  margin: 15px 0;
+  color: #ffff;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+/* -----footer------ */
+#footer {
+  padding: 60px 0;
+  background-color: #ccc;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copy p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px;
+}
